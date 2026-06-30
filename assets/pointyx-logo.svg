@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108" role="img" aria-label="PointYX logo">
+  <circle cx="54" cy="54" r="29" fill="#235B4E"/>
+  <circle cx="54" cy="54" r="19" fill="#E7F0EB"/>
+  <circle cx="54" cy="54" r="10" fill="#235B4E"/>
+  <circle cx="54" cy="54" r="5" fill="#F3B53F"/>
+  <path fill="#235B4E" d="M51 14h6v17h-6zM51 77h6v17h-6zM14 51h17v6H14zM77 51h17v6H77z"/>
+  <path fill="none" stroke="#F3B53F" stroke-width="4" stroke-linecap="round" d="M70 25a25 25 0 0 1 14 14M75 16a37 37 0 0 1 18 18"/>
+</svg>
