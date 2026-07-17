@@ -3,120 +3,84 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PointYX — GNSS měření a vytyčování pro Android</title>
-  <meta name="description" content="PointYX je Android aplikace pro GNSS měření, RTK, NTRIP, vytyčování, mapu, výpočty a export dat v terénu.">
-  <meta name="theme-color" content="#111827">
-  <link rel="preload" href="styles.v4.css" as="style">
-  <link rel="stylesheet" href="styles.v4.css">
+  <title>PointYX — přesné GNSS měření v terénu</title>
+  <meta name="description" content="PointYX je česká Android aplikace pro profesionální GNSS měření, vytyčování, RTK, NTRIP, mapu, výpočty a export dat.">
+  <meta name="theme-color" content="#0f4f46">
+  <link rel="icon" href="assets/logo/pointyx-logo.svg">
+  <link rel="stylesheet" href="styles.v5.css">
+  <link rel="stylesheet" href="animations.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="PointYX domů">
-      <img src="assets/logo/pointyx-logo.svg" alt="PointYX" class="brand-logo">
-    </a>
-    <nav class="nav" aria-label="Hlavní menu">
-      <a href="#features">Funkce</a>
-      <a href="#screens">Ukázky</a>
-      <a href="#workflow">Postup</a>
-      <a href="#contact">Kontakt</a>
+  <header class="header">
+    <a class="logo" href="#top"><img src="assets/logo/pointyx-logo.svg" alt="PointYX"></a>
+    <nav aria-label="Hlavní navigace">
+      <a href="#moznosti">Možnosti</a><a href="#aplikace">Aplikace</a><a href="#kontakt">Kontakt</a>
     </nav>
+    <a class="nav-cta" href="mailto:info@pointyx.com">Napsat nám</a>
   </header>
 
   <main id="top">
-    <section class="hero section-pad">
+    <section class="hero wrap">
       <div class="hero-copy">
-        <p class="eyebrow">Android • GNSS • RTK • NTRIP</p>
-        <h1>Přesné měření a vytyčování bez zbytečné složitosti.</h1>
-        <p class="lead">PointYX pomáhá v terénu připojit GNSS přijímač, měřit body, vytyčovat souřadnice, pracovat s mapou a exportovat data do použitelných formátů.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#contact">Mám zájem o testování</a>
-          <a class="button ghost" href="#screens">Zobrazit aplikaci</a>
+        <p class="kicker"><span></span> GNSS aplikace pro Android</p>
+        <h1>Přesně v terénu.<br><em>Jednoduše v mobilu.</em></h1>
+        <p class="intro">Měření, vytyčování, RTK korekce i práce s mapou v jedné přehledné aplikaci. PointYX spojuje externí GNSS přijímač s vaším telefonem.</p>
+        <div class="actions">
+          <a class="button primary" href="mailto:info@pointyx.com?subject=PointYX%20–%20zájem%20o%20testování">Mám zájem o testování <b>→</b></a>
+          <a class="button secondary" href="#aplikace">Prohlédnout aplikaci</a>
         </div>
-        <div class="hero-metrics" aria-label="Hlavní vlastnosti">
-          <span>Bluetooth GNSS</span>
-          <span>RTK / NTRIP</span>
-          <span>DXF / TXT export</span>
-        </div>
+        <ul class="trust"><li>Bluetooth GNSS</li><li>RTK / NTRIP</li><li>S‑JTSK</li></ul>
       </div>
-      <div class="hero-visual" aria-label="Ukázka aplikace PointYX">
-        <div class="phone hero-phone">
-          <img src="assets/screens/measure.jpg" alt="Obrazovka měření v aplikaci PointYX">
+      <div class="hero-art">
+        <span class="spark spark-a"></span><span class="spark spark-b"></span><span class="spark spark-c"></span>
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="phone phone-main hero-slides">
+          <img class="slide slide-1" src="assets/screens/new-overview.jpg" alt="Přehled v aplikaci PointYX">
+          <img class="slide slide-2" src="assets/screens/new-measure.jpg" alt="Měření v aplikaci PointYX">
+          <img class="slide slide-3" src="assets/screens/new-map.jpg" alt="Mapa v aplikaci PointYX">
         </div>
-        <div class="floating-card card-one">RTK fix</div>
-        <div class="floating-card card-two">S-JTSK připraveno</div>
+        <div class="status status-fix"><i></i><span><small>Řešení</small><strong>RTK FIX</strong></span></div>
+        <div class="status status-precision"><span><small>Přesnost</small><strong>1,4 cm</strong></span></div>
       </div>
     </section>
 
-    <section id="features" class="section section-pad soft-bg">
-      <div class="section-head">
-        <p class="eyebrow">Funkce</p>
-        <h2>Všechno důležité pro práci s GNSS v mobilu.</h2>
-        <p>Jednoduché prostředí pro měření, kontrolu přijímače, NTRIP korekce, mapu, vytyčení a export.</p>
-      </div>
+    <section class="strip" aria-label="Hlavní funkce"><div class="wrap strip-inner">
+      <span>Přijímač</span><i></i><span>NTRIP korekce</span><i></i><span>Měření</span><i></i><span>Vytyčení</span><i></i><span>Export</span>
+    </div></section>
+
+    <section id="moznosti" class="section wrap">
+      <div class="section-title"><div><p class="kicker"><span></span> Vše potřebné na jednom místě</p><h2>Od připojení přijímače<br>až po hotová data.</h2></div><p>PointYX je navržený pro rychlou a čitelnou práci venku. Bez přepínání mezi několika aplikacemi.</p></div>
       <div class="feature-grid">
-        <article class="feature-card"><span class="icon">01</span><h3>Měření bodů</h3><p>Sběr bodů v terénu s přehlednou kontrolou přesnosti, stavu řešení a informací z přijímače.</p></article>
-        <article class="feature-card"><span class="icon">02</span><h3>Vytyčování</h3><p>Praktická navigace k bodu s rozdíly v poloze a jasným vedením při práci v terénu.</p></article>
-        <article class="feature-card"><span class="icon">03</span><h3>NTRIP / CZEPOS</h3><p>Připojení ke korekční službě přímo z aplikace bez složitého přepínání mezi nástroji.</p></article>
-        <article class="feature-card"><span class="icon">04</span><h3>Bluetooth GNSS</h3><p>Připojení externího GNSS přijímače přes Bluetooth a kontrola důležitých údajů.</p></article>
-        <article class="feature-card"><span class="icon">05</span><h3>Mapa a podklady</h3><p>Přehled bodů v mapě, práce v kontextu terénu a rychlá orientace na zakázce.</p></article>
-        <article class="feature-card"><span class="icon">06</span><h3>Export dat</h3><p>Výstupy pro další zpracování, včetně praktických formátů pro geodetickou a stavební praxi.</p></article>
+        <article class="feature featured"><span class="num">01</span><div class="feature-icon">＋</div><h3>Měření bodů</h3><p>Ukládejte body s přehledem o přesnosti, kvalitě řešení a aktuální poloze.</p><img src="assets/screens/new-measure.jpg" alt="Obrazovka měření"></article>
+        <article class="feature"><span class="num">02</span><div class="feature-icon">⌖</div><h3>Vytyčování</h3><p>Přehledná navigace k bodu s okamžitou informací o směru a vzdálenosti.</p></article>
+        <article class="feature"><span class="num">03</span><div class="feature-icon">⌁</div><h3>NTRIP a RTK</h3><p>Připojení ke korekční službě včetně CZEPOS přímo z aplikace.</p></article>
+        <article class="feature"><span class="num">04</span><div class="feature-icon">▧</div><h3>Mapa a DXF</h3><p>Body i podklady vidíte v souvislostech přímo na mapě zakázky.</p></article>
+        <article class="feature"><span class="num">05</span><div class="feature-icon">△</div><h3>Výpočty</h3><p>Praktické geodetické výpočty dostupné kdykoliv přímo v terénu.</p></article>
       </div>
     </section>
 
-    <section id="screens" class="section section-pad">
-      <div class="section-head narrow">
-        <p class="eyebrow">Aplikace</p>
-        <h2>Ukázky obrazovek</h2>
-        <p>Screenshoty jsou vložené do menších telefonních náhledů, aby nerušily obsah a stránka zůstala přehledná.</p>
-      </div>
-      <div class="screens-grid">
-        <figure class="screen-card"><div class="phone"><img loading="lazy" src="assets/screens/measure.jpg" alt="Měření bodů"></div><figcaption>Měření</figcaption></figure>
-        <figure class="screen-card"><div class="phone"><img loading="lazy" src="assets/screens/stakeout.jpg" alt="Vytyčování bodů"></div><figcaption>Vytyčení</figcaption></figure>
-        <figure class="screen-card"><div class="phone"><img loading="lazy" src="assets/screens/receiver.jpg" alt="Připojení přijímače"></div><figcaption>Přijímač</figcaption></figure>
-        <figure class="screen-card"><div class="phone"><img loading="lazy" src="assets/screens/ntrip.jpg" alt="NTRIP nastavení"></div><figcaption>NTRIP</figcaption></figure>
+    <section id="aplikace" class="showcase">
+      <div class="wrap showcase-inner">
+        <div class="showcase-copy"><p class="kicker light"><span></span> Navrženo pro práci venku</p><h2>Jasné informace.<br>Minimum kroků.</h2><p>Čisté rozhraní ukazuje právě to, co potřebujete. Velké ovládací prvky a dobře čitelné hodnoty usnadňují práci i v náročných podmínkách.</p><div class="checks"><span>✓ Přehled zakázek</span><span>✓ Kontrola přijímače</span><span>✓ Práce s body</span><span>✓ Export dat</span></div></div>
+        <div class="phones">
+          <div class="phone back left"><img src="assets/screens/new-stakeout.jpg" alt="Vytyčení"></div>
+          <div class="phone center"><img src="assets/screens/new-map.jpg" alt="Mapa"></div>
+          <div class="phone back right"><img src="assets/screens/new-calculations.jpg" alt="Výpočty"></div>
+        </div>
       </div>
     </section>
 
-    <section id="workflow" class="section-pad workflow">
-      <div class="section-head narrow">
-        <p class="eyebrow">Postup práce</p>
-        <h2>Od připojení přijímače po export dat.</h2>
-      </div>
-      <div class="workflow-grid">
-        <article><span>1</span><h3>Připoj přijímač</h3><p>Vyber GNSS zařízení přes Bluetooth a zkontroluj kvalitu řešení.</p></article>
-        <article><span>2</span><h3>Zapni korekce</h3><p>Nastav NTRIP profil a pracuj s RTK přesností v terénu.</p></article>
-        <article><span>3</span><h3>Měř nebo vytyčuj</h3><p>Sbírej body, kontroluj mapu nebo naviguj k vytyčovanému bodu.</p></article>
-        <article><span>4</span><h3>Exportuj</h3><p>Připrav data pro další zpracování, dokumentaci nebo předání.</p></article>
-      </div>
+    <section class="section wrap users">
+      <div><p class="kicker"><span></span> Pro profesionály v terénu</p><h2>Jeden nástroj.<br>Různé úkoly.</h2></div>
+      <div class="user-grid"><article><b>01</b><h3>Geodézie</h3><p>Měření, vytyčování a kontrola bodů.</p></article><article><b>02</b><h3>Stavebnictví</h3><p>Rychlá kontrola polohy přímo na stavbě.</p></article><article><b>03</b><h3>GIS a mapování</h3><p>Sběr terénních dat a jejich snadný export.</p></article></div>
     </section>
 
-    <section class="section section-pad split soft-bg">
-      <div>
-        <p class="eyebrow">Pro koho</p>
-        <h2>Geodeti, stavby a technici v terénu.</h2>
-        <p>PointYX je navržený pro rychlé použití přímo venku. Bez složitých obrazovek, bez zbytečných voleb navíc, s důrazem na čitelnost a rychlost.</p>
-      </div>
-      <div class="use-list">
-        <div><strong>Geodézie</strong><span>měření, vytyčení, kontrola bodů</span></div>
-        <div><strong>Stavebnictví</strong><span>kontrola polohy a práce na stavbě</span></div>
-        <div><strong>GIS a mapování</strong><span>sběr bodů a export dat</span></div>
-        <div><strong>Drony</strong><span>podpora prací navazujících na 3D data</span></div>
-      </div>
-    </section>
-
-    <section id="contact" class="cta section-pad">
-      <div class="cta-box">
-        <p class="eyebrow">PointYX</p>
-        <h2>Chcete aplikaci vyzkoušet?</h2>
-        <p>PointYX je ve vývoji. Hledáme uživatele z praxe, kteří chtějí testovat GNSS měření a vytyčování na Androidu.</p>
-        <a class="button primary" href="mailto:info@pointyx.com">info@pointyx.com</a>
-      </div>
+    <section id="kontakt" class="contact wrap">
+      <div><p class="kicker light"><span></span> PointYX je ve vývoji</p><h2>Chcete být<br>u testování?</h2></div>
+      <div><p>Hledáme uživatele z praxe, kteří nám pomohou aplikaci doladit pro skutečnou práci v terénu.</p><a class="button gold" href="mailto:info@pointyx.com?subject=PointYX%20–%20zájem%20o%20testování">info@pointyx.com <b>→</b></a></div>
     </section>
   </main>
 
-  <footer class="footer">
-    <span>© PointYX</span>
-    <span>GNSS software pro Android</span>
-  </footer>
+  <footer class="footer wrap"><img src="assets/logo/pointyx-logo.svg" alt="PointYX"><p>GNSS software pro Android</p><p>© 2026 PointYX</p></footer>
 </body>
 </html>
