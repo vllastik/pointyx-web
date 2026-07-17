@@ -1,4 +1,5 @@
 /* Jemné produktové animace */
+.header-actions{display:flex;align-items:center;gap:15px}.language{display:flex;align-items:center;gap:3px;padding:3px;background:#edf2ed;border:1px solid #d9e2dc;border-radius:99px;font-size:11px;font-weight:800}.language a,.language span{display:grid;place-items:center;min-width:31px;height:27px;border-radius:99px}.language a{color:#76817d;transition:color .2s,background .2s}.language a:hover{color:var(--green);background:#fff}.language .active{background:var(--green);color:#fff;box-shadow:0 4px 10px rgba(15,79,70,.18)}
 .hero-copy{animation:rise .8s cubic-bezier(.2,.8,.2,1) both}
 .hero-art{animation:fade .9s .15s both}
 .hero h1 em{background:linear-gradient(90deg,var(--green),#168272,var(--green));background-size:200% auto;background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:shimmer 6s linear infinite}
@@ -19,3 +20,4 @@
 @keyframes spark{0%,100%{transform:translateY(0);opacity:.55}50%{transform:translateY(-18px);opacity:1}}
 @keyframes screenCycle{0%{opacity:0;transform:scale(1.015)}5%,29%{opacity:1;transform:scale(1)}34%,100%{opacity:0;transform:scale(.99)}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.hero-slides .slide{display:none}.hero-slides .slide-1{display:block;opacity:1}}
+@media(max-width:600px){.header-actions{gap:8px}.language{margin-left:auto}}
